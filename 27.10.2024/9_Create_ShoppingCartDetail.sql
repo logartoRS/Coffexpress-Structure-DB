@@ -1,0 +1,1 @@
+-- ShoppingCartDetail table
