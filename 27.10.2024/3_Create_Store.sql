@@ -1,3 +1,4 @@
+USE Coffexpress;
 -- Store table
 CREATE TABLE Store (
     id_store INT NOT NULL IDENTITY,
