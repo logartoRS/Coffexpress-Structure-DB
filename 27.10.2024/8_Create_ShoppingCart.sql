@@ -7,3 +7,4 @@ CREATE TABLE ShoppingCart (
 	CONSTRAINT PK_shopcart PRIMARY KEY (id_shopcart),
 	CONSTRAINT FK_shopcart_id_user FOREIGN KEY (id_user) REFERENCES Users (id_user) ON DELETE NO ACTION
 );
+CREATE INDEX IX_ShoppingCart_id_user ON Users (id_user);

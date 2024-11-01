@@ -9,3 +9,5 @@ CREATE TABLE FavoriteProduct (
 	CONSTRAINT FK_favorite_product_id_user FOREIGN KEY (id_user) REFERENCES Users (id_user) ON DELETE NO ACTION,
 	CONSTRAINT FK_favorite_product_id_product FOREIGN KEY (id_product) REFERENCES Products (id_product) ON DELETE NO ACTION
 );
+CREATE INDEX IX_FavoriteProduct_id_user ON Users (id_user);
+CREATE INDEX IX_FavoriteProduct_id_product ON Products (id_product);

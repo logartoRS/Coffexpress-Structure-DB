@@ -9,3 +9,4 @@ CREATE TABLE Payment (
 	CONSTRAINT PK_payment PRIMARY KEY (id_payment),
 	CONSTRAINT FK_payment_id_order FOREIGN KEY (id_order) REFERENCES Orders (id_order) ON DELETE NO ACTION
 );
+CREATE INDEX IX_Payment_id_order ON Orders (id_order);
